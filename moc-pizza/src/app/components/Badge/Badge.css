@@ -1,0 +1,14 @@
+.item-badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: #fff;
+  color: #222;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  z-index: 10;
+  letter-spacing: 0.5px;
+}

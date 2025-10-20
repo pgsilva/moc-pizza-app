@@ -12,6 +12,7 @@ const App = () => {
       image: 'https://via.placeholder.com/200x120/FF5733/FFFFFF?text=Margherita',
       description: 'Molho de tomate, mussarela e manjericão fresco.',
       price: 45.00,
+      badgeLabel: 'Novidade',
     },
     {
       id: 'p2',
@@ -26,6 +27,7 @@ const App = () => {
       image: 'https://via.placeholder.com/200x120/6A5ACD/FFFFFF?text=Frango',
       description: 'Molho de tomate, mussarela, frango desfiado e catupiry.',
       price: 52.00,
+      badgeLabel: 'Novidade',
     },
     {
       id: 'p4',
@@ -51,6 +53,7 @@ const App = () => {
       image: 'https://via.placeholder.com/200x120/FFD700/000000?text=Combo+Familia',
       description: '1 pizza grande + 1 refri 2L.',
       price: 70.00,
+      badgeLabel: '20% Off',
     },
     {
       id: 'pr2',
@@ -63,6 +66,16 @@ const App = () => {
 
   return (
     <div className="app-container">
+      <header className="banner-header">
+        <div className="banner-bg">
+          <img src="/img/banner-pizza.jpg" alt="Banner Pizza" className="banner-image" />
+        </div>
+        <div className="banner-content">
+          <h1 className="banner-title">MOC Pizza</h1>
+          <p className="banner-subtitle">A melhor experiência de pizzaria, agora no seu bolso.</p>
+          <p className="banner-desc">Peça online, aproveite promoções exclusivas e descubra sabores irresistíveis.</p>
+        </div>
+      </header>
       {/* Estilo de fundo escuro para o corpo do app */}
       <style jsx global>{`
         body {
@@ -71,15 +84,8 @@ const App = () => {
           margin: 0;
         }
       `}</style>
-
-      <h1>Bem-vindo à Pizzaria!</h1>
       <HorizontalCardList title="Pizzas do Dia" items={pizzasDoDia} />
       <HorizontalCardList title="Promoções Imperdíveis" items={promocoes} />
-
-      {/* Exemplo de imagem para ilustrar o conceito da pizza */}
-      <p style={{color: 'white', textAlign: 'center', marginTop: '40px'}}>
-        Aqui está uma representação de uma deliciosa pizza.
-      </p>
       
     </div>
   );
