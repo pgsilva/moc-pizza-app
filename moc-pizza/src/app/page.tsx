@@ -2,6 +2,7 @@
 
 import React from 'react';
 import HorizontalCardList from './components/HorizontalCardList/HorizontalCardList';
+import HorizontalRankedList from './components/HorizontalRankedList/HorizontalRankedList';
 
 const App = () => {
   // Dados de exemplo para o seu menu de pizzas
@@ -64,6 +65,44 @@ const App = () => {
     },
   ];
 
+  const topPizzasSemana = [
+    {
+      id: 'tp1',
+      name: 'Quatro Queijos',
+      image: 'https://via.placeholder.com/200x120/4682B4/FFFFFF?text=Quatro+Queijos',
+      description: 'Mussarela, provolone, parmesão e gorgonzola.',
+      price: 55.00,
+    },
+    {
+      id: 'tp2',
+      name: 'Portuguesa',
+      image: 'https://via.placeholder.com/200x120/8B4513/FFFFFF?text=Portuguesa',
+      description: 'Molho de tomate, mussarela, presunto, ovos, cebola e azeitona.',
+      price: 50.00,
+    },
+    {
+      id: 'tp3',
+      name: 'Frango c/ Catupiry',
+      image: 'https://via.placeholder.com/200x120/6A5ACD/FFFFFF?text=Frango',
+      description: 'Molho de tomate, mussarela, frango desfiado e catupiry.',
+      price: 52.00,
+    },
+    {
+      id: 'tp4',
+      name: 'Calabresa',
+      image: 'https://via.placeholder.com/200x120/DAA520/FFFFFF?text=Calabresa',
+      description: 'Molho de tomate, mussarela, calabresa fatiada e cebola.',
+      price: 48.50,
+    },
+    {
+      id: 'tp5',
+      name: 'Margherita',
+      image: 'https://via.placeholder.com/200x120/FF5733/FFFFFF?text=Margherita',
+      description: 'Molho de tomate, mussarela e manjericão fresco.',
+      price: 45.00,
+    },
+  ];
+
   return (
     <div className="app-container">
       <header className="banner-header">
@@ -71,12 +110,14 @@ const App = () => {
           <img src="/img/banner-pizza.jpg" alt="Banner Pizza" className="banner-image" />
         </div>
         <div className="banner-content">
-          <h1 className="banner-title">MOC Pizza</h1>
+          <h1 className="banner-title">Bem-vindo à MOC Pizza!</h1>
           <p className="banner-subtitle">A melhor experiência de pizzaria, agora no seu bolso.</p>
           <p className="banner-desc">Peça online, aproveite promoções exclusivas e descubra sabores irresistíveis.</p>
         </div>
       </header>
-      {/* Estilo de fundo escuro para o corpo do app */}
+      <HorizontalCardList title="Nossas Pizzas" items={pizzasDoDia} />
+      <HorizontalRankedList title="Top 5" items={topPizzasSemana} />
+      <HorizontalCardList title="Promoções Imperdíveis" items={promocoes} />
       <style jsx global>{`
         body {
           background-color: #1a1a1a;
@@ -84,9 +125,6 @@ const App = () => {
           margin: 0;
         }
       `}</style>
-      <HorizontalCardList title="Pizzas do Dia" items={pizzasDoDia} />
-      <HorizontalCardList title="Promoções Imperdíveis" items={promocoes} />
-      
     </div>
   );
 };

@@ -1,0 +1,65 @@
+.horizontal-ranked-list-container {
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.ranked-list-title {
+  color: white;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.horizontal-ranked-list-scroll {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: 15px;
+}
+.horizontal-ranked-list-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.horizontal-ranked-list {
+  display: flex;
+  padding-top: 5px;
+}
+
+.ranked-card-wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-width: 220px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.ranked-number {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  font-size: 5.5rem;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0.85;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  z-index: 20;
+  font-family: 'Arial Black', Arial, sans-serif;
+  background: none;
+  padding: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .horizontal-ranked-list-container {
+    margin: 16px 0;
+    padding: 0 8px;
+  }
+  .horizontal-ranked-list {
+    padding-top: 5px;
+  }
+  .ranked-number {
+    left: 4px;
+    top: 8px;
+    font-size: 3.2rem;
+  }
+}
