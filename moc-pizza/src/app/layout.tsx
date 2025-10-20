@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <meta name="theme-color" content="#222" />
+        <meta name="theme-color" content="#ffd700" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#222" />
         <meta name="msapplication-TileColor" content="#222" />
