@@ -1,0 +1,28 @@
+/* src/components/HorizontalCardList/HorizontalCardList.css */
+.horizontal-list-container {
+  margin: 20px 0;
+  padding: 0 20px; /* Padding nas laterais para o título e o scroll */
+}
+
+.list-title {
+  color: white;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.horizontal-list-scroll {
+  overflow-x: auto; /* Permite a rolagem horizontal */
+  scrollbar-width: none; /* Esconde a scrollbar no Firefox */
+  -ms-overflow-style: none; /* Esconde a scrollbar no IE/Edge */
+  padding-bottom: 15px; /* Espaço para "simular" uma scrollbar invisível ou evitar corte */
+}
+
+/* Esconde a scrollbar no Chrome, Safari e Opera */
+.horizontal-list-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.horizontal-list {
+  display: flex; /* Faz com que os itens fiquem lado a lado */
+  padding-top: 5px; /* Pequeno padding para o hover do card não "bater" na borda */
+}
