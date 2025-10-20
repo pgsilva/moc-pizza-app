@@ -110,7 +110,7 @@ const App = () => {
           <img src="/img/banner-pizza.jpg" alt="Banner Pizza" className="banner-image" />
         </div>
         <div className="banner-content">
-          <h1 className="banner-title">Bem-vindo à MOC Pizza!</h1>
+          <h1 className="banner-title">MOC Pizza!</h1>
           <p className="banner-subtitle">A melhor experiência de pizzaria, agora no seu bolso.</p>
           <p className="banner-desc">Peça online, aproveite promoções exclusivas e descubra sabores irresistíveis.</p>
         </div>
