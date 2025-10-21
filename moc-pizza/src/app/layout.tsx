@@ -30,8 +30,8 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#ffd700" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#222" />
-        <meta name="msapplication-TileColor" content="#222" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffd700" />
+        <meta name="msapplication-TileColor" content="#ffd700" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
