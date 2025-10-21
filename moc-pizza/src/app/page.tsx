@@ -10,10 +10,10 @@ const App = () => {
     {
       id: 'p1',
       name: 'Margherita',
-      image: 'https://via.placeholder.com/200x120/FF5733/FFFFFF?text=Margherita',
+      image: 'https://avatars.githubusercontent.com/u/31107814?v=4',
       description: 'Molho de tomate, mussarela e manjericão fresco.',
       price: 45.00,
-      badgeLabel: 'Novidade',
+      badgeLabel: 'novidade',
     },
     {
       id: 'p2',
@@ -25,10 +25,10 @@ const App = () => {
     {
       id: 'p3',
       name: 'Frango c/ Catupiry',
-      image: 'https://via.placeholder.com/200x120/6A5ACD/FFFFFF?text=Frango',
+      image: 'https://avatars.githubusercontent.com/u/31107814?v=4',
       description: 'Molho de tomate, mussarela, frango desfiado e catupiry.',
       price: 52.00,
-      badgeLabel: 'Novidade',
+      badgeLabel: 'novidade',
     },
     {
       id: 'p4',
@@ -40,7 +40,7 @@ const App = () => {
     {
       id: 'p5',
       name: 'Quatro Queijos',
-      image: 'https://via.placeholder.com/200x120/4682B4/FFFFFF?text=Quatro+Queijos',
+      image: 'https://avatars.githubusercontent.com/u/31107814?v=4',
       description: 'Mussarela, provolone, parmesão e gorgonzola.',
       price: 55.00,
     },
@@ -69,9 +69,10 @@ const App = () => {
     {
       id: 'tp1',
       name: 'Quatro Queijos',
-      image: 'https://via.placeholder.com/200x120/4682B4/FFFFFF?text=Quatro+Queijos',
+      image: 'https://avatars.githubusercontent.com/u/31107814?v=4',
       description: 'Mussarela, provolone, parmesão e gorgonzola.',
       price: 55.00,
+      badgeLabel: 'novidade',
     },
     {
       id: 'tp2',
@@ -83,7 +84,7 @@ const App = () => {
     {
       id: 'tp3',
       name: 'Frango c/ Catupiry',
-      image: 'https://via.placeholder.com/200x120/6A5ACD/FFFFFF?text=Frango',
+      image: 'https://avatars.githubusercontent.com/u/31107814?v=4',
       description: 'Molho de tomate, mussarela, frango desfiado e catupiry.',
       price: 52.00,
     },
@@ -97,7 +98,7 @@ const App = () => {
     {
       id: 'tp5',
       name: 'Margherita',
-      image: 'https://via.placeholder.com/200x120/FF5733/FFFFFF?text=Margherita',
+      image: 'https://avatars.githubusercontent.com/u/31107814?v=4',
       description: 'Molho de tomate, mussarela e manjericão fresco.',
       price: 45.00,
     },
